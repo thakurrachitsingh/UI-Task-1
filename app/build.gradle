@@ -57,4 +57,8 @@ dependencies {
     //Material Design
     implementation 'com.google.android.material:material:<version>'
 
+
+    //Expandable TextView
+    implementation 'com.ms-square:expandableTextView:0.1.4'
+
 }
