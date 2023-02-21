@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -26,12 +26,6 @@
             android:layout_height="wrap_content"
             android:scrollbars="horizontal"
             />
-<!--        <com.google.android.material.bottomsheet.BottomSheetDragHandleView-->
-<!--            android:id="@+id/draghandle"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="50dp"-->
-<!--            android:outlineSpotShadowColor="@color/black"/>-->
 
 
         <com.google.android.material.textfield.TextInputLayout
@@ -115,10 +109,16 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:tag="+"
-            android:text="header 1"
+            android:text="Size Chart"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             android:drawableEnd="@drawable/ic_baseline_add_24"
             android:background="@drawable/border"
-
+            android:layout_marginTop="40dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="14dp"
+            android:paddingVertical="11dp"
             />
         <TextView
             android:id="@+id/expandableBody1"
@@ -128,21 +128,32 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="Body 1"
+            android:textSize="26sp"
+            android:textColor="@color/black"
             android:background="@drawable/border"
             android:visibility="gone"
 
             />
+
         <TextView
             android:id="@+id/expandableHead2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/expandableBody1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:tag="-"
-            android:text="Header 2"
+            android:background="@drawable/border"
             android:drawableEnd="@drawable/minimizer_shape"
-            android:background="@drawable/border"/>
+            android:paddingVertical="11dp"
+            android:paddingStart="10dp"
+            android:paddingEnd="14dp"
+            android:tag="-"
+            android:text="Product Details"
+            android:textColor="@color/black"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/expandableBody1" />
+
         <TextView
             android:id="@+id/expandableBody2"
             android:layout_width="0dp"
@@ -150,12 +161,16 @@
             app:layout_constraintTop_toBottomOf="@+id/expandableHead2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Body 2"
-            android:background="@drawable/border"/>
+            android:text="@string/productDetailsContent"
+            android:textSize="26sp"
+            android:textColor="@color/black"
+            android:background="@drawable/border"
+            android:paddingHorizontal="10dp"
+            />
 
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</FrameLayout>
+</androidx.core.widget.NestedScrollView>

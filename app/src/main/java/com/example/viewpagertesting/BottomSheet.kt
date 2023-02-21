@@ -30,7 +30,6 @@ class BottomSheet : BottomSheetDialogFragment() {
         viewPager2 = crrView.findViewById<RecyclerView>(R.id.viewPager2)
         val addToBoxButton = crrView.findViewById<Button>(R.id.button)
         addToBoxButton.setBackgroundColor(getResources().getColor(R.color.black))
-        //addToBoxButton.setBackgroundResource(R.drawable.button_shaper)
         initializeAdapter()
         expandableFunctionality(crrView)
 
@@ -48,6 +47,8 @@ class BottomSheet : BottomSheetDialogFragment() {
         viewPager2.adapter = adapter
 
     }
+
+
     private fun expandableFunctionality(crrView : View) {
         crrView.findViewById<TextView>(R.id.expandableHead1).setOnClickListener { iconAndVisibilityChanger(crrView.findViewById(R.id.expandableHead1), crrView.findViewById(R.id.expandableBody1)) }
         crrView.findViewById<TextView>(R.id.expandableHead2).setOnClickListener { iconAndVisibilityChanger(crrView.findViewById<TextView>(R.id.expandableHead2), crrView.findViewById(R.id.expandableBody2)) }
