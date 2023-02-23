@@ -7,14 +7,15 @@ import android.widget.Button
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import java.util.Timer
+import kotlin.concurrent.schedule
 
 class MainActivity : AppCompatActivity() {
     lateinit var bottomSheet: BottomSheet
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-
     }
 
 
@@ -22,6 +23,10 @@ class MainActivity : AppCompatActivity() {
     fun openBottomSheet(view: View) {
         bottomSheet = BottomSheet()
         bottomSheet.show(supportFragmentManager, bottomSheet.tag)
+        Timer().schedule(2000){
+            val dialogBox = DialogBox()
+            dialogBox.show(supportFragmentManager, "hello")
+        }
     }
 
 

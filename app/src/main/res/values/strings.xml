@@ -3,21 +3,33 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="expandableFirstText">hello guys</string>
-    <string name="productDetailsContent">Dressed up, or dressed down. Complete our Quimby dress with fresh white sneakers for an easy laid back look.
-
-ITEM DETAILS
--Woven detail at collar, pocket flaps, and waistband
--Full button through detail at center front placket
-- Horn Buttons
-
-FABRIC DETAILS
--We worked long and hard to come up with a fabric that would look like a woven but give you the comfort of a knit.
-The result was our Made for Movement Hudson Twill. It is super comfortable, soft, does not wrinkle, and moves with you.
-- All our fabrics are made in a mill that is Oeko-Tex certified,
-So you can be assured that the chemicals used to treat the fabrics are not harmful to the environment.
-
-SIZE  FIT
--Model is 5\'10\" wearing a size 1, equivalent to a size small
--Size small measures 34\" in length -95% Cotton 5% Spandex.
-Imported.</string>
+    <string name="expandableBody2">
+        Dressed up, or dressed down. Complete our Quimby dress with fresh white sneakers for an easy laid back look.\n
+\n
+ITEM DETAILS\n
+-Woven detail at collar, pocket flaps, and waistband\n
+-Full button through detail at center front placket\n
+- Horn Buttons\n
+\n
+FABRIC DETAILS\n
+-We worked long and hard to come up with a fabric that would look like a woven but give you the comfort of a knit.\n
+The result was our Made for Movement Hudson Twill. It is super comfortable, soft, does not wrinkle, and moves with you.\n
+- All our fabrics are made in a mill that is Oeko-Tex certified,\n
+So you can be assured that the chemicals used to treat the fabrics are not harmful to the environment.\n
+\n
+SIZE  FIT\n
+-Model is 5\'10\" wearing a size 1, equivalent to a size small\n
+-Size small measures 34\" in length -95% Cotton 5% Spandex.\n
+Imported.
+    </string>
+    <string name="description">Helena Dress in Brownie Buffalo Check</string>
+    <string name="heading">Faherty Brand</string>
+    <string name="expandableHead1">Size Chart</string>
+    <string name="expandableHead2">Product Details</string>
 </resources>
+
+
+
+
+
+

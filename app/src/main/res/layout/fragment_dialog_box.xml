@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        tools:context=".DialogBox">
+
+
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/sofia_sans_con"
+            android:text="Sign up for texts to receive shipping and service updates and special offers?"
+            android:textAlignment="center"
+            android:textColor="@color/requiredBlack"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+        <TextView
+            android:id="@+id/enterNumberToValidate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:paddingVertical="13dp"
+            android:text="Enter mobile phone number"
+            android:textAlignment="center"
+            android:background="@drawable/border"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/headerText" />
+
+        <TextView
+            android:id="@+id/termsAndCondition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/brandon_grotesque_light"
+            android:text="By entering my mobile number and confirming I agree to opt in to receive SMS messages from Haverdash Updates with account alerts and recurring promotional offers using an automatic telephone dialing system and I understand that I am not required to opt in as a condition of purchasing any property, goods, or services. Message frequency varies. Text HELP to 64243 for help, Text STOP to 64243 to end. Msg&amp;Data Rates May Apply. Click to read Terms and Conditions, Privacy Policy."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterNumberToValidate" />
+
+        <TextView
+            android:id="@+id/confirmButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/requiredBlack"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp"
+            android:text="CONFIRM"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/termsAndCondition" />
+
+        <TextView
+            android:id="@+id/noThanksButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/border"
+            android:paddingTop="9dp"
+            android:paddingBottom="8dp"
+            android:text="NO THANKS"
+            android:textAlignment="center"
+            android:textColor="#606060"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmButton" />
+        <!--    <Button-->
+        <!--        android:id="@+id/confirmButton"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/termsAndCondition"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        android:text="CONFIRM"-->
+        <!--        android:textAlignment="center"-->
+        <!--        android:paddingTop="9dp"-->
+        <!--        android:paddingBottom="8dp"-->
+        <!--        android:layout_marginTop="30dp"-->
+        <!--        android:layout_marginHorizontal="16dp"-->
+        <!--        android:backgroundTint="@color/requiredBlack"-->
+        <!--        android:background="@drawable/button_shaper"-->
+
+
+        <!--        />-->
+        <!--    <Button-->
+        <!--        android:id="@+id/noThanksButton"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/confirmButton"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        android:text="NO THANKS"-->
+        <!--        android:paddingTop="9dp"-->
+        <!--        android:paddingBottom="8dp"-->
+        <!--        android:layout_marginTop="8dp"-->
+        <!--        android:layout_marginHorizontal="16dp"-->
+        <!--        android:layout_marginBottom="16dp"-->
+        <!--        android:background="@drawable/button_shaper"-->
+        <!--        />-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -57,11 +57,11 @@ class BottomSheet : BottomSheetDialogFragment() {
     private fun iconAndVisibilityChanger(head : TextView, body : TextView) {
         if(head.tag=="+"){
             head.tag = "-"
-            head.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.ic_baseline_add_24, 0)
+            head.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.plus, 0)
             body.visibility = View.GONE
         }else{
             head.tag = "+"
-            head.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.minimizer_shape,0)
+            head.setCompoundDrawablesRelativeWithIntrinsicBounds(0,0,R.drawable.minus,0)
             body.visibility = View.VISIBLE
         }
     }

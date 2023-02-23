@@ -11,9 +11,38 @@
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:textColor">@color/black</item>
         <!-- Customize your theme here. -->
     </style>
-<!--    <style name="button">-->
-<!--        <item name="fontFamily"-->
-<!--    </style>-->
+    <style name="ViewPagerTesting.expandableHeadBody" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:fontFamily">@font/sofia_sans_con</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="ViewPagerTesting.expandableHead" parent="ViewPagerTesting.expandableHeadBody">
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingVertical">11dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">14dp</item>
+        <item name="android:background">@drawable/border_grey</item>
+    </style>
+    <style name="ViewPagerTesting.expandableBody" parent="ViewPagerTesting.expandableHeadBody">
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/border</item>
+    </style>
+    <style name="ViewPagerTesting" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+
 </resources>
+
+
+
+
+
+
+
+
+
+

@@ -70,6 +70,7 @@
             android:layout_marginTop="8dp"
             android:padding="18dp"
             android:text="Add To My Box"
+            android:textSize="14sp"
             android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_weight="7"
@@ -84,10 +85,9 @@
             app:layout_constraintTop_toBottomOf="@+id/button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Faherty Brand"
-            android:textSize="18sp"
+            android:text="@string/heading"
+            android:textSize="14sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
             android:paddingTop="10dp"/>
         <TextView
             android:id="@+id/description"
@@ -96,77 +96,60 @@
             app:layout_constraintTop_toBottomOf="@+id/heading"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="Helena Dress in Brownie Buffalo Check"
-            android:textSize="15sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
+            android:text="@string/description"
+            android:textSize="14sp"
             android:paddingTop="10dp"/>
         <TextView
             android:id="@+id/expandableHead1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/description"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:tag="+"
-            android:text="Size Chart"
-            android:textSize="26sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:drawableEnd="@drawable/ic_baseline_add_24"
-            android:background="@drawable/border"
+            android:text="@string/expandableHead1"
+            android:drawablePadding="12dp"
             android:layout_marginTop="40dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="14dp"
-            android:paddingVertical="11dp"
+            style="@style/ViewPagerTesting.expandableHead"
+            app:drawableEndCompat="@drawable/plus"
             />
         <TextView
             android:id="@+id/expandableBody1"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/expandableHead1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:text="Body 1"
-            android:textSize="26sp"
-            android:textColor="@color/black"
-            android:background="@drawable/border"
+            style="@style/ViewPagerTesting.expandableBody"
             android:visibility="gone"
-
             />
 
         <TextView
             android:id="@+id/expandableHead2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/border"
-            android:drawableEnd="@drawable/minimizer_shape"
-            android:paddingVertical="11dp"
-            android:paddingStart="10dp"
-            android:paddingEnd="14dp"
+            android:drawablePadding="12dp"
             android:tag="-"
-            android:text="Product Details"
-            android:textColor="@color/black"
-            android:textSize="26sp"
-            android:textStyle="bold"
+            android:text="@string/expandableHead2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/expandableBody1" />
+            app:layout_constraintTop_toBottomOf="@+id/expandableBody1"
+            style="@style/ViewPagerTesting.expandableHead"
+            app:drawableEndCompat="@drawable/minus" />
 
         <TextView
             android:id="@+id/expandableBody2"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/expandableHead2"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:text="@string/productDetailsContent"
-            android:textSize="26sp"
-            android:textColor="@color/black"
-            android:background="@drawable/border"
-            android:paddingHorizontal="10dp"
+            android:text="@string/expandableBody2"
+            style="@style/ViewPagerTesting.expandableBody"
             />
+
+
+
+
+
+
+
+
+
 
 
 
